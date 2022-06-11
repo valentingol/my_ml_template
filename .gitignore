@@ -1,0 +1,6 @@
+my_worflow_template.egg-info/*
+.coverage
+
+*.pyc
+.pytest_cache
+**/__pycache__

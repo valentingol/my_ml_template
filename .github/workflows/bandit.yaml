@@ -1,0 +1,19 @@
+name: Bandit
+
+on: [push]
+
+jobs:
+  bandit-check:
+    runs-on: ubuntu-latest
+    name: Bandit Check
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v2
+      - name: Set up Python environment
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+      - name: Lint
+        uses: jpetrucciani/bandit-check@master
+        with:
+          bandit_flags: '--skip B101,B413,B303,B310,B112,B304,B320,B410,B404'
