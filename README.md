@@ -4,6 +4,11 @@
 ![PythonVersion](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10-informational)
 [![License](https://img.shields.io/github/license/valentingol/my_workflow_template?color=999)](https://stringfixer.com/fr/MIT_license)
 
+![GitHub Release Date](https://img.shields.io/github/release-date/valentingol/my_workflow_template)
+![GitHub last commit](https://img.shields.io/github/last-commit/valentingol/my_workflow_template)
+![GitHub User followers](https://img.shields.io/github/followers/valentingol?label=User%20followers&style=social)
+![GitHub User's User stars](https://img.shields.io/github/stars/valentingol?label=User%20Stars&style=social)
+
 [![Pycodestyle](https://github.com/valentingol/my_workflow_template/actions/workflows/pycodestyle.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/pycodestyle.yaml)
 [![Flake8](https://github.com/valentingol/my_workflow_template/actions/workflows/flake.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/flake.yaml)
 [![PyLint](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/valentingol/106c646ac67294657bccf02bbe22208f/raw/workflow_template_pylint.json)](https://github.com/valentingol/my_workflow_template/actions/workflows/pylint.yaml)
@@ -24,6 +29,8 @@ This repository is a template for using some GitHub worflows:
 - 🎨 `pylint` to have an overall grade of the style (incuding an optional minimum grade to pass)
 - 🔒 `bandit` for security
 - 🔄 Cache is preserved between runs (usefull for heavy requirements)
+- ⌚ Last commit and release date
+- 🧑‍🤝‍🧑 Github stats
 - Some other badges are provided (such as release ⏫, licenses 📑 and python version 🔖).
 
 All worflows create a badge available, for instace, in README.
