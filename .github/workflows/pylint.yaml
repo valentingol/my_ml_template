@@ -47,3 +47,5 @@ jobs:
         message: ${{ env.PYLINT_SCORE }}
         color: ${{ env.PYLINT_COLOR }}
         style: flat
+        namedLogo: Linode
+        logoColor: white
