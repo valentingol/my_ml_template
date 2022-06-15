@@ -50,6 +50,6 @@ jobs:
         message: ${{ env.PYTEST_SCORE }}
         color: ${{ env.PYTEST_COLOR }}
         style: flat
-        logoSvg: codecov
-        logoColor: '#000000'
+        namedLogo: codecov
+        logoColor: white
         labelColor: '#343B42'

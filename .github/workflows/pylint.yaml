@@ -47,6 +47,6 @@ jobs:
         message: ${{ env.PYLINT_SCORE }}
         color: ${{ env.PYLINT_COLOR }}
         style: flat
-        namedLogo: linode
-        logoColor: '#000000'
+        namedLogo: stylelint
+        logoColor: white
         labelColor: '#343B42'
