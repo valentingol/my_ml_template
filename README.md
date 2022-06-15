@@ -28,6 +28,8 @@ This repository is a template for using some GitHub worflows:
 - ✅ `pytest-cov` to check unit tests and get coverage (including an optional minimum coverage to pass)
 - 🎨 `pycodestyle` and `flake` to check Python scripts style (PEP8)
 - 🎨 `pylint` to have an overall grade of the style (incuding an optional minimum grade to pass)
+- 📝 `pydocstyle` to check Python docstrings style (Numpy convention)
+- 🏷️ `mypy` to check typing
 - 🔒 `bandit` for security
 - 🔄 Cache is preserved between runs (usefull for heavy requirements)
 - ⌚ Last commit and release date
