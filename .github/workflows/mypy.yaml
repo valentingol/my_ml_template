@@ -4,9 +4,12 @@ on: [push]
 
 jobs:
   mypy-lint:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Mypy Check
-      uses: jpetrucciani/mypy-check@0.930
-      with:
-        mypy_flags: '--config-file .mypy.ini'
+    runs-on: ubuntu-latest
+    name: MyPy Lint
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v2
+      - name: Mypy Check
+        uses: jpetrucciani/mypy-check@0.930
+        with:
+          mypy_flags: '--config-file .mypy.ini'
