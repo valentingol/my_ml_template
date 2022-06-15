@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 # Installation
 config = {
     'name': 'my_worflow_template',
-    'version': '1.1',
+    'version': '1.2',
     'description': 'Personal worflow template.',
     'author': 'Valentin Goldite',
     'author_email': 'valentin.goldite@gmail.com',
