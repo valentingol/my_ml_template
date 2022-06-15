@@ -2,8 +2,22 @@
 import sys
 
 
+def check_output() -> None:
+    """Check output of Pydocstyle.
+
+    Raises
+    ------
+    ValueError
+        If Pydocstyle find errors.
+    """
+    args = sys.argv[1:]
+    for arg in args:
+        if arg.startswith('--n_errors='):
+            n_errors = float(arg.split('=')[1])
+
+    raise ValueError(f'Pydocstyle found {n_errors} errors in python '
+                     'docstrings. Please fix them.')
+
+
 if __name__ == '__main__':
-    score = int((sys.argv[1]).split('=')[1])
-    if score > 0:
-        raise ValueError(f'Pydocstyle found {score} errors in python '
-                         'docstrings. Please fix them.')
+    check_output()
