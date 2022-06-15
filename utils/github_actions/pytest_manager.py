@@ -26,7 +26,11 @@ def check_output() -> float:
             score_percent = arg.split('=')[1]
             score = float(score_percent.split('%')[0])
         if arg.startswith('--n_failures='):
-            n_failures = int(arg.split('=')[1])
+            n_failures_str = arg.split('=')[1]
+            if n_failures_str == '':
+                n_failures = 0
+            else:
+                n_failures = int(n_failures_str)
 
     if n_failures > 0:
         raise ValueError(f'Pytest finds {n_failures} failure(s) on tests.')
