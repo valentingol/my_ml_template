@@ -29,7 +29,7 @@ def check_output() -> float:
             n_failures = int(arg.split('=')[1])
 
     if n_failures > 0:
-        raise ValueError(f'Pytest finds {n_failures} failures on tests.')
+        raise ValueError(f'Pytest finds {n_failures} failure(s) on tests.')
 
     if score < SCORE_MIN:
         raise ValueError(f'Pytest coverage {score}% is lower than '
