@@ -13,8 +13,3 @@ def test_add_integers() -> None:
     # Wrong use case
     with pytest.raises(TypeError, match='.*integer.*'):
         add_integers(0, 0.5)
-
-
-def test_raise_error() -> None:
-    """Raise error."""
-    assert False
