@@ -23,4 +23,4 @@ jobs:
       run: |
         score=$(wc -l < pydocstyle.txt)
         echo "Number of errors in docstrings: $score"
-        python utils/github_actions/pylint_manager.py --score=$score
+        python utils/github_actions/pydocstyle_manager.py --score=$score
