@@ -1,5 +1,4 @@
-
-""" Manage Pytest-cov output on worflow. """
+"""Manage Pytest-cov output on worflow."""
 
 import sys
 
