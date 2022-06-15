@@ -6,8 +6,8 @@
 
 ![GitHub Release Date](https://img.shields.io/github/release-date/valentingol/my_workflow_template)
 ![GitHub last commit](https://img.shields.io/github/last-commit/valentingol/my_workflow_template)
-![GitHub User followers](https://img.shields.io/github/followers/valentingol?label=User%20followers&style=social)
-![GitHub User's User stars](https://img.shields.io/github/stars/valentingol?label=User%20Stars&style=social)
+[![GitHub User followers](https://img.shields.io/github/followers/valentingol?label=User%20followers&style=social)](https://github.com/valentingol)
+[![GitHub User's User stars](https://img.shields.io/github/stars/valentingol?label=User%20Stars&style=social)](https://github.com/valentingol)
 
 [![Pycodestyle](https://github.com/valentingol/my_workflow_template/actions/workflows/pycodestyle.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/pycodestyle.yaml)
 [![Flake8](https://github.com/valentingol/my_workflow_template/actions/workflows/flake.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/flake.yaml)
