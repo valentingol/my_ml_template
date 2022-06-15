@@ -32,8 +32,10 @@ jobs:
     - name: Create badge for pytest
       run: |
         score=$(cat .pytest.txt | grep TOTAL | tr -s ' ' | cut -d ' ' -f 4)
+        n_failures=$(cat .pytest.txt | grep failed | cut -d ' ' -f 2)
+        echo "Pytest finds $n_failures failure(s)"
         echo "Tests coverage is $score"
-        color=$(python utils/github_actions/pytest_manager.py --score=$score)
+        color=$(python utils/github_actions/pytest_manager.py --score=$score --n_failures=$n_failures)
         echo "PYTEST_COLOR=$color"
         echo "PYTEST_COLOR=$color" >> $GITHUB_ENV
         echo "PYTEST_SCORE=$score"
