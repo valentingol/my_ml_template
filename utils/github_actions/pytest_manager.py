@@ -23,7 +23,8 @@ def check_output() -> float:
     args = sys.argv[1:]
     for arg in args:
         if arg.startswith('--score='):
-            score = float(arg.split('=')[1])
+            score_percent = arg.split('=')[1]
+            score = float(score_percent.split('%')[0])
         if arg.startswith('--n_failures='):
             n_failures = int(arg.split('=')[1])
 
