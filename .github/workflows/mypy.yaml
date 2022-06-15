@@ -4,8 +4,7 @@ on: [push]
 
 jobs:
   mypy-lint:
-    runs-on: ubuntu-latest
-    name: MyPy Lint
-    uses: jpetrucciani/mypy-check@master
+    name: Mypy Check
+    uses: jpetrucciani/mypy-check@0.930
     with:
       mypy_flags: '--config-file .mypy.ini'
