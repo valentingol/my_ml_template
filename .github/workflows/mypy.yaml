@@ -5,7 +5,7 @@ on: [push]
 jobs:
   mypy-lint:
     - name: Checkout
-          uses: actions/checkout@v2
+      uses: actions/checkout@v2
     - name: Mypy Check
       uses: jpetrucciani/mypy-check@0.930
       with:
