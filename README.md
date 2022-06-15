@@ -12,6 +12,7 @@
 [![Pycodestyle](https://github.com/valentingol/my_workflow_template/actions/workflows/pycodestyle.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/pycodestyle.yaml)
 [![Flake8](https://github.com/valentingol/my_workflow_template/actions/workflows/flake.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/flake.yaml)
 [![Pydocstyle](https://github.com/valentingol/my_workflow_template/actions/workflows/pydocstyle.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/pydocstyle.yaml)
+[![MyPy](https://github.com/valentingol/my_workflow_template/actions/workflows/mypy.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/mypy.yaml)
 [![PyLint](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/valentingol/106c646ac67294657bccf02bbe22208f/raw/workflow_template_pylint.json)](https://github.com/valentingol/my_workflow_template/actions/workflows/pylint.yaml)
 
 [![Tests](https://github.com/valentingol/my_workflow_template/actions/workflows/tests.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/tests.yaml)

@@ -4,7 +4,7 @@ import pytest
 from src.some_code import add_integers
 
 
-def test_add_integers():
+def test_add_integers() -> None:
     """Test add_integers function."""
     # Correct use case
     out = add_integers(5, -8)
