@@ -76,7 +76,7 @@ limit-inference-results=100
 
 # List of plugins (as comma separated values of python module names) to load,
 # usually to register additional checkers.
-load-plugins=
+load-plugins=pylint.extensions.docparams
 
 # Pickle collected data for later comparisons.
 persistent=yes
@@ -304,7 +304,7 @@ indent-after-paren=4
 indent-string='    '
 
 # Maximum number of characters on a single line.
-max-line-length=100
+max-line-length=79  # default 100
 
 # Maximum number of lines in a module.
 max-module-lines=1000
@@ -600,3 +600,17 @@ valid-metaclass-classmethod-first-arg=cls
 # Exceptions that will emit a warning when caught.
 overgeneral-exceptions=BaseException,
                        Exception
+
+
+[tool.pylint.parameter_documentation]
+# Parameter documentation (optional check)
+
+accept-no-param-doc = true
+
+accept-no-raise-doc = true
+
+accept-no-return-doc = true
+
+accept-no-yields-doc = true
+
+default-docstring-type = numpy
