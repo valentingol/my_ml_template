@@ -13,6 +13,7 @@
 [![Flake8](https://github.com/valentingol/my_workflow_template/actions/workflows/flake.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/flake.yaml)
 [![Pydocstyle](https://github.com/valentingol/my_workflow_template/actions/workflows/pydocstyle.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/pydocstyle.yaml)
 [![MyPy](https://github.com/valentingol/my_workflow_template/actions/workflows/mypy.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/mypy.yaml)
+[![Isort](https://github.com/valentingol/my_workflow_template/actions/workflows/isort.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/isort.yaml)
 [![PyLint](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/valentingol/106c646ac67294657bccf02bbe22208f/raw/workflow_template_pylint.json)](https://github.com/valentingol/my_workflow_template/actions/workflows/pylint.yaml)
 
 [![Tests](https://github.com/valentingol/my_workflow_template/actions/workflows/tests.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/tests.yaml)
@@ -27,6 +28,7 @@ This repository is a template for using some GitHub worflows:
 
 - ✅ `pytest-cov` to check unit tests and get coverage (including an optional minimum coverage to pass)
 - 🎨 `pycodestyle` and `flake` to check Python scripts style (PEP8)
+- 🎨 `isort` to check the import order of Python scripts
 - 🎨 `pylint` to have an overall grade of the style (incuding an optional minimum grade to pass)
 - 📝 `pydocstyle` to check Python docstrings style (Numpy convention)
 - 🏷️ `mypy` to check typing
@@ -37,6 +39,8 @@ This repository is a template for using some GitHub worflows:
 - Some other badges are provided (such as release ⏫, licenses 📑 and python version 🔖).
 
 All worflows create a badge available, for instace, in README.
+
+This repository provides also a pre-commit configuration to check end-of-file, trailing whitespace, flake8, pydocstyle (numpy) and isort.
 
 ## HowTo
 
