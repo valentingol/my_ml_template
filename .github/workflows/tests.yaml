@@ -51,5 +51,5 @@ jobs:
         color: ${{ env.PYTEST_COLOR }}
         style: flat
         namedLogo: codecov
-        logoColor: grey
+        logoColor: '#959DA5'
         labelColor: '#343B42'
