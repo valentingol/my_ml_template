@@ -42,6 +42,8 @@ All worflows create a badge available, for instace, in README.
 
 This repository provides also a pre-commit configuration to check end-of-file, trailing whitespace, flake8, pydocstyle (numpy) and isort.
 
+![alt text](assets/checks.png)
+
 ## HowTo
 
 All feature of this template is easy to adapt on your project by changing names or versions on the `.github/workflows/` directory and on the badge paths on your markdown/rst files. All the worflows are independent and can be used individually.
@@ -50,7 +52,7 @@ First you need to create a [gist](https://gist.github.com/) The id of the gist i
 
 ## Notes
 
-By default, there is no maximum unit test coverage but you can set the minimum coverage you want in `utils/github_actions/pytest_manager.py`. There is also a minimum grade for pylint that is 7.0/10 and ca, be set in `utils/github_actions/pylint_manager.py`. Details of pylint options are in `.pylintrc` and can also be changed at will. Pycodestyle and Flake should raise no warnings/errors to pass.
+By default, there is no maximum unit test coverage but you can set the minimum coverage you want in `utils/github_actions/pytest_manager.py`. There is also a minimum grade for pylint that is 7.0/10 and can be set in `utils/github_actions/pylint_manager.py`. Details of pylint options are in `.pylintrc` and can also be changed at will. Pycodestyle, Flake, Pydocstyle, MyPy, Bandit should raise no warnings/errors to pass (but not YAPF).
 
 ## Contributing
 
