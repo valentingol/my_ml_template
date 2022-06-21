@@ -36,8 +36,10 @@ def check_output() -> float:
         raise ValueError(f'Pytest finds {n_failures} failure(s) on tests.')
 
     if score < SCORE_MIN:
-        raise ValueError(f'Pytest coverage {score}% is lower than '
-                         f'minimum ({SCORE_MIN}%)')
+        raise ValueError(
+                f'Pytest coverage {score}% is lower than '
+                f'minimum ({SCORE_MIN}%)'
+                )
 
     return score
 
