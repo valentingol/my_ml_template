@@ -23,8 +23,10 @@ def check_output() -> float:
             score = float(arg.split('=')[1])
 
     if score < SCORE_MIN:
-        raise ValueError(f'Pylint score {score} is lower than '
-                         f'minimum ({SCORE_MIN})')
+        raise ValueError(
+                f'Pylint score {score} is lower than '
+                f'minimum ({SCORE_MIN})'
+                )
 
     return score
 
