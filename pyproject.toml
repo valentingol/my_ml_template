@@ -15,12 +15,6 @@ classifiers = [
 dynamic = ["readme", "dependencies"]
 version = "2.0.0"
 
-[tool.poetry]
-packages = [
-    { include = "template" },
-    { include = "github_actions_utils" },
-]
-
 [tool.setuptools]
 py-modules = ["template"]
 license-files = ['LICEN[CS]E*', 'COPYING*', 'NOTICE*', 'AUTHORS*']
