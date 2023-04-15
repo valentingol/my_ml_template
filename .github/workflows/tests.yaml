@@ -25,7 +25,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest pytest-cov
         pip install -r requirements.txt
-        pip install -e .
+        pip install --force-reinstall -e .
     - name: Test with pytest
       run: |
         pytest --disable-pytest-warnings --cov-report=term --cov=src --cov-config=.coveragerc tests/ | tee .pytest.txt

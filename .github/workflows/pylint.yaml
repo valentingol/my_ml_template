@@ -24,7 +24,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install pylint
         pip install -r requirements.txt
-        pip install -e .
+        pip install --force-reinstall -e .
     - name: Analysing the code with pylint
       run: |
         pylint --rcfile=.pylintrc --output-format=text $(git ls-files '*.py') | tee .pylint.txt
