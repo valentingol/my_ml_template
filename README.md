@@ -1,7 +1,7 @@
 # Personal workflow template
 
 [![Release](https://img.shields.io/github/v/release/valentingol/my_workflow_template?include_prereleases)](https://github.com/valentingol/my_workflow_template/releases)
-![PythonVersion](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10-informational)
+![PythonVersion](https://img.shields.io/badge/python-3.8%20%7C%203.8%20%7C%203.9%20%7C%203.10-informational)
 [![License](https://img.shields.io/github/license/valentingol/my_workflow_template?color=999)](https://stringfixer.com/fr/MIT_license)
 
 ![GitHub Release Date](https://img.shields.io/github/release-date/valentingol/my_workflow_template)
@@ -9,11 +9,16 @@
 [![GitHub User followers](https://img.shields.io/github/followers/valentingol?label=User%20followers&style=social)](https://github.com/valentingol)
 [![GitHub User's User stars](https://img.shields.io/github/stars/valentingol?label=User%20Stars&style=social)](https://github.com/valentingol)
 
-[![Pycodestyle](https://github.com/valentingol/my_workflow_template/actions/workflows/pycodestyle.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/pycodestyle.yaml)
+[![Torch_logo](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Wandb_logo](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=WeightsAndBiases&logoColor=white)](https://wandb.ai/site)
+
+[![Ruff_logo](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v1.json)](https://github.com/charliermarsh/ruff)
+[![Black_logo](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+[![Ruff](https://github.com/valentingol/my_workflow_template/actions/workflows/ruff.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/ruff.yaml)
 [![Flake8](https://github.com/valentingol/my_workflow_template/actions/workflows/flake.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/flake.yaml)
 [![Pydocstyle](https://github.com/valentingol/my_workflow_template/actions/workflows/pydocstyle.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/pydocstyle.yaml)
 [![MyPy](https://github.com/valentingol/my_workflow_template/actions/workflows/mypy.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/mypy.yaml)
-[![Isort](https://github.com/valentingol/my_workflow_template/actions/workflows/isort.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/isort.yaml)
 [![PyLint](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/valentingol/106c646ac67294657bccf02bbe22208f/raw/workflow_template_pylint.json)](https://github.com/valentingol/my_workflow_template/actions/workflows/pylint.yaml)
 
 [![Tests](https://github.com/valentingol/my_workflow_template/actions/workflows/tests.yaml/badge.svg)](https://github.com/valentingol/my_workflow_template/actions/workflows/tests.yaml)
@@ -24,21 +29,21 @@
 
 ![alt text](assets/github_actions.jpg)
 
-This repository is a template for using some GitHub worflows:
+This repository is a template for using some GitHub workflows:
 
 - ✅ `pytest-cov` to check unit tests and get coverage (including an optional minimum coverage to pass)
 - 🎨 `pycodestyle` and `flake` to check Python scripts style (PEP8)
 - 🎨 `isort` to check the import order of Python scripts
-- 🎨 `pylint` to have an overall grade of the style (incuding an optional minimum grade to pass)
+- 🎨 `pylint` to have an overall grade of the style (including an optional minimum grade to pass)
 - 📝 `pydocstyle` to check Python docstrings style (Numpy convention)
 - 🏷️ `mypy` to check typing
 - 🔒 `bandit` for security
-- 🔄 Cache is preserved between runs (usefull for heavy requirements)
+- 🔄 Cache is preserved between runs (useful for heavy requirements)
 - ⌚ Last commit and release date
 - 🧑‍🤝‍🧑 Github stats
 - Some other badges are provided (such as release ⏫, licenses 📑 and python version 🔖).
 
-All worflows create a badge available, for instace, in README.
+All workflows create a badge available, for instance, in README.
 
 This repository provides also a pre-commit configuration to check end-of-file, trailing whitespace, flake8, pydocstyle (numpy) and isort.
 
