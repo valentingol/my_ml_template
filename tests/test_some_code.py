@@ -1,7 +1,7 @@
 """Unitary tests for src/some_code.py."""
 import pytest
 
-from src.some_code import add_integers
+from template.some_code import add_integers
 
 
 def test_add_integers() -> None:
@@ -11,5 +11,5 @@ def test_add_integers() -> None:
     assert isinstance(out, int)
 
     # Wrong use case
-    with pytest.raises(TypeError, match='.*integer.*'):
-        add_integers(0, 0.5)
+    with pytest.raises(TypeError, match=".*integer.*"):
+        add_integers(0, 0.5)  # type: ignore
