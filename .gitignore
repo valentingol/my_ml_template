@@ -1,8 +1,21 @@
-my_worflow_template.egg-info/*
+# Cache
+**_cache
+**.pyc
+*/__pycache__
+# Env
+.env
+.venv
+env
+env.yaml
+environment.yml
+venv
+**.egg-info
+# VScode
+.vscode
+# Temporary files
+**/tmp.py
+**/tmp.ipynb
+# Wandb archive
+wandb
+# Tests
 .coverage
-
-*.pyc
-.pytest_cache
-**/__pycache__
-
-*.odp

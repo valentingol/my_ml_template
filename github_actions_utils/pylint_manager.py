@@ -1,7 +1,7 @@
-"""Manage Pylint output on worflow."""
+"""Manage Pylint output on workflow."""
 import sys
 
-from utils.github_actions.color import score_to_hex_color
+from github_actions_utils.color import score_to_hex_color
 
 
 def check_output() -> float:
@@ -19,19 +19,18 @@ def check_output() -> float:
     """
     args = sys.argv[1:]
     for arg in args:
-        if arg.startswith('--score='):
-            score = float(arg.split('=')[1])
+        if arg.startswith("--score="):
+            score = float(arg.split("=")[1])
 
     if score < SCORE_MIN:
         raise ValueError(
-                f'Pylint score {score} is lower than '
-                f'minimum ({SCORE_MIN})'
-                )
+            f"Pylint score {score} is lower than " f"minimum ({SCORE_MIN})"
+        )
 
     return score
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # SCORE_MIN can be changed safely depending on your needs.
     SCORE_MIN = 7.0
     SCORE_MAX = 10.0

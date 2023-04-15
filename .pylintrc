@@ -305,7 +305,7 @@ indent-after-paren=4
 indent-string='    '
 
 # Maximum number of characters on a single line.
-max-line-length=79  # default 100
+max-line-length=88  # default 100
 
 # Maximum number of lines in a module.
 max-module-lines=1000
@@ -599,8 +599,8 @@ valid-metaclass-classmethod-first-arg=cls
 [EXCEPTIONS]
 
 # Exceptions that will emit a warning when caught.
-overgeneral-exceptions=BaseException,
-                       Exception
+overgeneral-exceptions=builtins.BaseException,
+                       builtins.Exception
 
 
 [tool.pylint.parameter_documentation]

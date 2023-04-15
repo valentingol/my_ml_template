@@ -12,4 +12,4 @@ jobs:
       - name: Mypy Check
         uses: jpetrucciani/mypy-check@0.930
         with:
-          mypy_flags: '--config-file .mypy.ini'
+          mypy_flags: '--config-file pyproject.toml'
