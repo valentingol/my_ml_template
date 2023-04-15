@@ -45,9 +45,9 @@ This repository is a template for using some GitHub workflows:
 
 All workflows create a badge available, for instance, in README.
 
-This repository provides also a pre-commit configuration to check end-of-file, trailing whitespace, flake8, pydocstyle (numpy) and isort.
+This repository provides also a pre-commit configuration to check end-of-file, trailing whitespace, flake8 and pydocstyle (numpy).
 
-![alt text](assets/checks.png)
+![alt text](assets/checks.svg)
 
 ## HowTo
 
