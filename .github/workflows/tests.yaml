@@ -28,7 +28,7 @@ jobs:
         pip install -e .
     - name: Test with pytest
       run: |
-        pytest --disable-pytest-warnings --cov-report=term --cov=src --cov-config=.coveragerc tests/ | tee .pytest.txt
+        pytest --disable-pytest-warnings --cov-report=term --cov=template --cov-config=.coveragerc tests/ | tee .pytest.txt
     - name: Handle test results
       run: |
         score=$(cat .pytest.txt | grep TOTAL | tr -s ' ' | cut -d ' ' -f 4)
