@@ -13,7 +13,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dynamic = ["readme", "dependencies"]
-version = "3.0.0"
+version = "3.0.1"
 
 [tool.setuptools]
 py-modules = ["template"]
@@ -30,7 +30,7 @@ dependencies = { file = ["requirements.txt"] }
 source = ["template"]
 
 [tool.coverage.report]
-exclude_lines = ["if __name__ == '__main__':"]
+exclude_lines = ["if __name__ == '__main__':", "    main()"]
 
 
 [tool.pytest.ini_options]
