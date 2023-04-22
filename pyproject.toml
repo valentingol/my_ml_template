@@ -13,21 +13,25 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dynamic = ["readme", "dependencies"]
-version = "2.0.0"
+version = "3.0.0"
 
 [tool.setuptools]
 py-modules = ["template"]
 license-files = ['LICEN[CS]E*', 'COPYING*', 'NOTICE*', 'AUTHORS*']
 
 [project.urls]
-Source = "https://github.com/valentingol/my_workflow_template"
+Source = "https://github.com/valentingol/my_ml_template"
 
 [tool.setuptools.dynamic]
 readme = { file = ["README.md"] , content-type = "text/markdown" }
 dependencies = { file = ["requirements.txt"] }
 
 [tool.coverage.run]
-source = ["tempate"]
+source = ["template"]
+
+[tool.coverage.report]
+exclude_lines = ["if __name__ == '__main__':"]
+
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -45,7 +49,8 @@ select = ['A', 'ARG', 'C4', 'C90', 'COM', 'D', 'E', 'F', 'FBT', 'I',
 ignore = ['RET504', 'COM812', 'F841', 'F401', ]
 fixable = ['A', 'ARG', 'BLE', 'C4', 'C90', 'COM', 'D', 'E', 'F', 'FBT', 'I',
            'ICN', 'NPY', 'PD', 'PIE', 'PT', 'RET', 'SIM', 'TID', 'W']
-exclude = [".eggs", ".git", ".mypy_cache", ".ruff_cache", ".venv", "__pypackages__", "venv"]
+exclude = [".eggs", ".git", ".mypy_cache", ".ruff_cache", ".venv", "venv",
+           "__pypackages__"]
 
 line-length = 88
 target-version = "py310"
