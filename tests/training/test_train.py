@@ -1,16 +1,8 @@
 """Test the training."""
 import shutil
 
-from pytest_mock import MockerFixture
-
 from template import ProjectConfig
-from template.train.main import main, run
-
-
-def test_main(mocker: MockerFixture) -> None:
-    """Test main."""
-    mocker.patch("template.train.main.run")
-    main()
+from template.training.train import run
 
 
 def test_run() -> None:
