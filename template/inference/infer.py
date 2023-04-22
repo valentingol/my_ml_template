@@ -5,5 +5,5 @@ from template import ProjectConfig
 def run(config: ProjectConfig) -> None:
     """Run Inference."""
     # Run inference
-    assert config.experiment_path is not None
+    print("mode:", config.mode)
     print("Inference done.")
