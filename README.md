@@ -1,4 +1,4 @@
-# Personal workflow template
+# Personal ML template
 
 [![Release](https://img.shields.io/github/v/release/valentingol/my_ml_template?include_prereleases)](https://github.com/valentingol/my_ml_template/releases)
 ![PythonVersion](https://img.shields.io/badge/python-3.8%20%7E%203.11-informational)
@@ -28,8 +28,6 @@
 
 **Disclaimer**: Even if it is a personal project, everybody can use it freely
 and modify it for their own needs.
-
-![alt text](assets/github_actions.jpg)
 
 This repository is a template for using in ML projects. It includes:
 
