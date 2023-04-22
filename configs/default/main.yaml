@@ -1,0 +1,23 @@
+---  # Main configuration file
+
+experiment_path: null
+mode: null
+
+model: !model
+  type: ResNet
+  layers: 10
+  activations: ReLU
+
+data: !data
+  data_path: ../data
+  size: [64, 64]
+  number_of_samples: null
+  flip_probability: 0.5
+  rotate_probability: 0
+
+train:
+  learning_rate: 0.001
+  epochs: 50
+
+infer:
+  model_path: null

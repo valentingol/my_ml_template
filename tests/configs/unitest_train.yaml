@@ -1,0 +1,13 @@
+---  # Experiment config
+
+experiment_path: "./tests/tmp/train"
+mode: "train"
+
+model.layers: 1
+
+data: !data
+  number_of_samples: 1
+  flip_probability: 0.5
+
+train: !train
+  epochs: 1
