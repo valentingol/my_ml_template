@@ -1,16 +1,8 @@
 """Test the inference."""
 import shutil
 
-from pytest_mock import MockerFixture
-
 from template import ProjectConfig
-from template.infer.main import main, run
-
-
-def test_main(mocker: MockerFixture) -> None:
-    """Test main."""
-    mocker.patch("template.train.main.run")
-    main()
+from template.inference.infer import run
 
 
 def test_run() -> None:
