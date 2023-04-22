@@ -16,4 +16,4 @@ jobs:
       - name: Lint
         uses: jpetrucciani/bandit-check@master
         with:
-          bandit_flags: '--skip B101,B413,B303,B310,B112,B304,B320,B410,B404'
+          bandit_flags: '--skip B605,B607'
