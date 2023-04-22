@@ -20,6 +20,10 @@ echo "************** Unit tests **************"
 pytest --cov-report term-missing --cov=./template tests/
 check_output "Unit tests"
 
+echo "**************** Bandit ****************"
+bandit -r --skip B605,B607 . > /dev/null
+check_output "Unit tests"
+
 echo "**************** Typing ****************"
 mypy .
 check_output "Typing checks"
