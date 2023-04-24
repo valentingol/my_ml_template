@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=45", "wheel"]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
 
 [project]
 name = "template"
@@ -12,12 +12,13 @@ keywords = ["template", "machine", "learning"]
 classifiers = [
     "Programming Language :: Python :: 3",
 ]
-dynamic = ["readme", "dependencies"]
-version = "3.1.2"
+dynamic = ["readme", "dependencies", "version"]
 
 [tool.setuptools]
 py-modules = ["template"]
 license-files = ['LICEN[CS]E*', 'COPYING*', 'NOTICE*', 'AUTHORS*']
+
+[tool.setuptools_scm]
 
 [project.urls]
 Source = "https://github.com/valentingol/my_ml_template"
