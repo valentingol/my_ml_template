@@ -65,7 +65,7 @@ All workflows create a badge available, for instance, in README.
 This repository provides also a pre-commit configuration to check end-of-file,
 trailing whitespace, flake8 and pydocstyle (numpy).
 
-![alt text](assets/checks.svg)
+![alt text](assets/checks.drawio.svg)
 
 ## HowTo
 
