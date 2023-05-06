@@ -20,3 +20,8 @@ wandb
 # Tests
 .coverage
 tests/tmp
+# SCM
+template/_version.py
+# Doc
+build
+docs/_build
