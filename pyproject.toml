@@ -7,7 +7,7 @@ authors = [
     {name="Valentin Goldite", email="valentin.goldite@gmail.com"},
 ]
 description = """Personal machine learning template."""
-requires-python = ">=3.8"
+requires-python = ">=3.7"
 keywords = ["template", "machine", "learning"]
 classifiers = [
     "Programming Language :: Python :: 3",
