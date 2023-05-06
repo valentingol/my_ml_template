@@ -19,6 +19,7 @@ py-modules = ["template"]
 license-files = ['LICEN[CS]E*', 'COPYING*', 'NOTICE*', 'AUTHORS*']
 
 [tool.setuptools_scm]
+write_to = "template/_version.py"
 
 [project.urls]
 Source = "https://github.com/valentingol/my_ml_template"
