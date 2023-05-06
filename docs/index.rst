@@ -73,7 +73,7 @@ GIST_SECRET (details
 
 .. |Release| image:: https://img.shields.io/github/v/release/valentingol/my_ml_template?include_prereleases
    :target: https://github.com/valentingol/my_ml_template/releases
-.. |PythonVersion| image:: https://img.shields.io/badge/python-3.8%20%7E%203.11-informational
+.. |PythonVersion| image:: https://img.shields.io/badge/python-3.7%20%7E%203.11-informational
 .. |PytorchVersion| image:: https://img.shields.io/badge/pytorch-1.8%20%7E%201.13%20%7C%202.0-informational
 .. |License| image:: https://img.shields.io/github/license/valentingol/my_ml_template?color=999
    :target: https://stringfixer.com/fr/MIT_license
