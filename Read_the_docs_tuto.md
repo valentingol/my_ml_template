@@ -14,7 +14,7 @@ pip install -r docs/requirements.txt
 ## Launch sphinx autodoc
 
 ```bash
-sphinx-apidoc -f -o docs template/
+sphinx-apidoc -f -o docs <package>
 ```
 
 Clean the built .rst files (remove empty or unused sections and files).
