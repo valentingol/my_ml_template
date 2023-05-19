@@ -1,10 +1,10 @@
----  # Experiment config
+--- # Experiment config
 
-experiment_path: "../exp_configs/infer_exp/base"
+config_dir: ../configs/base
 mode: "infer"
 
 model.layers: 1
 
-data: !data
+data:
   number_of_samples: 1
   flip_probability: 0.5

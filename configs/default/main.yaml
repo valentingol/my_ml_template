@@ -1,14 +1,15 @@
----  # Main configuration file
+--- # Main configuration file
 
-experiment_path: null
+run_id: null
+config_dir: ../configs
 mode: null
 
-model: !model
+model:
   type: ResNet
   layers: 10
   activations: ReLU
 
-data: !data
+data:
   data_path: ../data
   size: [64, 64]
   number_of_samples: null
