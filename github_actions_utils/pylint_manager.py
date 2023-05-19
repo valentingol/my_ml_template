@@ -23,9 +23,7 @@ def check_output() -> float:
         if arg.startswith("--score="):
             score = float(arg.split("=")[1])
     if score == -10000.0:
-        raise ValueError(
-            "Please specify the score of Pylint using the flag --score=N."
-        )
+        raise ValueError("Please specify the score of Pylint using the flag --score=N.")
     if score < PYLINT_SCORE_MIN:
         raise ValueError(
             f"Pylint score {score} is lower than minimum ({PYLINT_SCORE_MIN})"
