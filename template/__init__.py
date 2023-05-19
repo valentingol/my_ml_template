@@ -1,4 +1,5 @@
 """Template module."""
-from template.yaecs_config.config import ProjectConfig
 
-__all__ = ["ProjectConfig"]
+from template._version import __version__, __version_tuple__
+
+__all__ = ["__version__", "__version_tuple__"]
