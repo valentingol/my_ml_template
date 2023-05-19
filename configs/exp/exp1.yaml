@@ -1,10 +1,10 @@
----  # Experiment config
+--- # Experiment config
 
 experiment_path: "../exp_configs/exp/exp1"
 mode: "train"
 
 model.layers: 8
 
-data: !data
+data:
   number_of_samples: 2
   flip_probability: 0.5

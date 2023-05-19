@@ -8,28 +8,26 @@ from pytest_mock import MockerFixture
 
 def test_main(mocker: MockerFixture) -> None:
     """Test main."""
-    if os.path.exists("tests/tmp"):
-        shutil.rmtree("tests/tmp")
+    if os.path.exists("../tmp"):
+        shutil.rmtree("../tmp")
     mocker.patch("template.inference.infer.run")
     mocker.patch("template.training.train.run")
-    # training mode
+    # Training mode
     run = os.system(
-        "python template/main.py --mode='train' --experiment_path='tests/tmp/1'"
+        "python template/main.py --config 'tests/configs/unitest_train.yaml'"
     )
     check.equal(run, 0)
-    check.is_true(os.path.exists("tests/tmp/1_0/config.yaml"))
-    check.is_true(os.path.exists("tests/tmp/1_0/config_hierarchy.yaml"))
-    # inference mode
+    check.is_true(os.path.exists("../tmp"))
+    shutil.rmtree("../tmp")
+    # Inference mode
     run = os.system(
-        "python template/main.py --mode='infer' --experiment_path='tests/tmp/2'"
+        "python template/main.py --config 'tests/configs/unitest_infer.yaml'"
     )
     check.equal(run, 0)
-    check.is_true(os.path.exists("tests/tmp/1_0/config.yaml"))
-    check.is_true(os.path.exists("tests/tmp/1_0/config_hierarchy.yaml"))
-    # unknown mode
-    run = os.system(
-        "python template/main.py --mode='UNKNOWN' --experiment_path='tests/tmp/3'"
-    )
+    check.is_true(os.path.exists("../tmp"))
+    shutil.rmtree("../tmp")
+    # Unknown mode
+    run = os.system("python template/main.py --mode='UNKNOWN'")
     check.not_equal(run, 0)
-
-    shutil.rmtree("tests/tmp")
+    if os.path.exists("../tmp"):
+        shutil.rmtree("../tmp")

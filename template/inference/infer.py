@@ -1,9 +1,9 @@
 """Inference main functions."""
-from template import ProjectConfig
+from typing import Any, Dict
 
 
-def run(config: ProjectConfig) -> None:
+def run(config: Dict[str, Any]) -> None:
     """Run Inference."""
     # Run inference
-    print("mode:", config.mode)
+    print("mode:", config["mode"])
     print("Inference done.")
