@@ -11,13 +11,12 @@ from template.training.train import run as run_train
 def main() -> None:
     """Launch training using YAECS config."""
     config = get_config()
-    mode = config.dict["mode"]
-    if mode == "train":
+    if config.mode == "train":
         run_train(config.dict)
-    elif mode == "infer":
+    elif config.mode == "infer":
         run_infer(config.dict)
     else:
-        raise ValueError(f"Unknown mode: {mode} (should be 'train' or 'infer).")
+        raise ValueError(f"Unknown mode: {config.mode} (should be 'train' or 'infer).")
 
 
 def get_config() -> Config:
@@ -26,9 +25,7 @@ def get_config() -> Config:
         lambda _: random.randint(0, 1_000_000), "run_id"
     )
     config = make_config("configs/default/main.yaml", process_list=[run_id_proc])
-    cfg_path = osp.join(
-        config.dict["config_dir"], str(config.dict["run_id"]), "config.yaml"
-    )
+    cfg_path = osp.join(config.config_dir, str(config.run_id), "config.yaml")
     save_config(config, cfg_path)
     return config
 
