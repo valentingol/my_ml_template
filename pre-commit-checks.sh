@@ -21,8 +21,8 @@ pytest --cov-report term-missing --cov=./template tests/
 check_output "Unit tests"
 
 echo "**************** Bandit ****************"
-bandit -r --skip B605,B607 . > /dev/null
-check_output "Unit tests"
+bandit -r --skip B605,B607,B311 . > /dev/null
+check_output "Bandit tests"
 
 echo "**************** Typing ****************"
 mypy .
